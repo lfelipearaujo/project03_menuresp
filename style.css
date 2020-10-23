@@ -5,6 +5,16 @@
 	font-family: "Open Sans";
 }
 
+
+:root {
+	--red: #f17d80;
+	--lightGreen: #c4d4af;
+	--darkGreen: #6c8672;
+
+
+}
+
+
 html,
 body {
 	height: 100%;
@@ -28,6 +38,7 @@ header {
 	background-size: cover;
 	background-position: center;
 	background-image: url('./capa.png');
+	filter: grayscale(60%);
 	font-weight: 300;
 }
 
@@ -83,11 +94,7 @@ header .logo {
 	float: left;
 	width: 160px;
 	height: 40px;
-	background-image: url('./logo-danki.png');
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: transparent;
+
 }
 
 header nav.desktop-menu ul {
@@ -124,7 +131,7 @@ header nav.desktop-menu li a {
 
 section.sessao1 {
 	width: 100%;
-	background-color: #472562;
+	background-color: var(--darkGreen);
 	padding: 0 2%;
 	height: 400px;
 }
@@ -166,7 +173,7 @@ section.sessao1 .container {
 }
 
 .btn1-texto {
-	background-color: #FF703D;
+	background-color: var(--red);
 	width: 165px;
 	height: 44px;
 	font-size: 13px;
@@ -192,7 +199,7 @@ section.sessao1 .container {
 .sessao2 {
 	padding-left: 2%;
 	padding-right: 2%;
-	background: white;
+	background:  var(--lightGreen);
 	text-align: center;
 }
 
@@ -201,7 +208,7 @@ section.sessao1 .container {
 }
 
 .sessao2 h2 {
-	color: #472663;
+	color: black;
 	font-weight: 300;
 }
 
@@ -209,6 +216,7 @@ section.sessao1 .container {
 	margin-top: 30px;
 	max-width: 900px;
 	display: inline-block;
+	font-weight: 300;
 }
 
 .sessao2 img {
@@ -226,8 +234,9 @@ section.sessao1 .container {
 	color: white;
 	float: left;
 	width: 50%;
+	min-height: 412px;
 	padding: 140px 0 90px 0;
-	background: #835FA7;
+	background: var(--darkGreen);
 }
 
 .wraper-part1 {
@@ -251,19 +260,25 @@ section.sessao1 .container {
 .part2 {
 	float: left;
 	width: 50%;
+	min-height: 412px;
 	padding: 140px 0 90px 0;
-	background: white;
+	background: var(--darkGreen);
+
+	color: white;
 }
 
 .sobre-autor {
 	float: left;
 	max-width: 600px;
 	padding-left: 30px;
+	color: white
+	;
 }
 
 .titulo-autor {
 	float: left;
 	width: 100%;
+	color: white;
 }
 
 .wraper-titulo-autor {
@@ -271,7 +286,7 @@ section.sessao1 .container {
 }
 
 .titulo-autor h2 {
-	color: #232323;
+	color: white;
 	font-weight: 400;
 	font-size: 21px;
 	padding-right: 20px;
@@ -279,7 +294,7 @@ section.sessao1 .container {
 
 .titulo-autor p {
 	font-size: 13px;
-	color: #232323;
+	color: white;
 	font-style: italic;
 	font-weight: 300;
 }
@@ -288,10 +303,9 @@ section.sessao1 .container {
 	float: left;
 	width: 40px;
 	height: 40px;
-	background-image: url('./actor1.png');
-	background-size: 100% 100%;
 	border-radius: 20px;
-	background-color: transparent;
+	background-color: var(--red);
+
 }
 
 .texto-autor {
@@ -301,7 +315,7 @@ section.sessao1 .container {
 }
 
 .texto-autor p {
-	color: #232323;
+	color: white;
 	font-size: 15px;
 }
 
@@ -319,20 +333,20 @@ section.sessao1 .container {
 	margin-right: 8px;
 	cursor: pointer;
 	border-radius: 8px;
-	background-color: rgb(200, 200, 200);
+	background-color: var(--red);
 }
 
 /* Aqui estou começando a sessão de número 4! */
 
 section.sessao4 {
-	background-color: #472563;
+	background-color: var(--lightGreen);
 	padding: 100px 0;
 }
 
 .form {
 	float: left;
 	width: 50%;
-	color: white;
+	color: black;
 	padding-left: 10px;
 }
 
@@ -373,7 +387,7 @@ section.sessao4 {
 
 .form form input[type=submit] {
 	border: 0;
-	background-color: #FF703D;
+	background-color: var(--red);
 	width: 165px;
 	height: 44px;
 	font-size: 13px;
@@ -387,7 +401,7 @@ section.sessao4 {
 	float: left;
 	width: 50%;
 	padding: 0 10px;
-	color: white;
+	color: black;
 }
 
 .map-wraper h2 {
@@ -425,7 +439,7 @@ section.sessao4 {
 
 footer {
 	padding: 40px 2%;
-	background: #192123;
+	background: var(--darkGreen);
 	color: white;
 }
 
